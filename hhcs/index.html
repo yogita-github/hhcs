@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HHCS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		body{
+			background-image: url('bggg7.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<div class="full_page">
+		<div class="navbar">
+		
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ's</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"style="width:auto";>Login</button></li>
+				</ul>
+			</nav>
+		</div>
+
+		
+
+
+
+
+
+
+		<div id='login-form'class='login-page'>
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+					<button type='button'onclick='register()'class='toggle-btn'>Register</button>
+				</div>
+				<form id='login' class='input-group-login'>
+					<input type='text' class='input-field'placeholder='Email-Id'required>
+					<input type='password' class='input-field'placeholder='Enter Password'required>
+					<input type='checkbox' class='check-box'><span>Remember Password</span>
+					<button type="submit" class="submit-btn">Log in</button>
+				</form>
+				<form id='register' class='input-group-register'>
+					<input type='text' class='input-field'placeholder='First Name'required>
+					<input type='text' class='input-field'placeholder='Last Name'required>
+					<input type='email'class='input-field'placeholder='Email-Id'required>
+					<input type='password' class='input-field'placeholder='Enter Password'required>
+					<input type='password' class='input-field'placeholder='Confirm Password'required>
+					<input type='checkbox'class='checkbox'><span>I agree to the terms and conditions</span>
+					<button type="submit" class="submit-btn">Register</button>
+				</form>
+			</div>
+		</div>
+	
+
+
+<div class="card" style="width: 18rem;" >
+  <img src="https://www.hdfcergo.com/images/default-source/health-insurance/how-to-buy-health-insurance-online.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Input</h5>
+    <p class="card-text">To find health status of user necessary inputs are to be entered.</p>
+    <a href="#" class="btn btn-primary">Body Vitals</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem; " >
+  <img src="https://assets.lybrate.com/q_auto:eco,f_auto,w_450/eagle/uploads/034a083a85c17ea6cd14d23ff6fe9d72/c97d88.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Health tips</h5>
+    <p class="card-text">To maintain health.</p>
+    <a href="#" class="btn btn-primary">Proceed</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem; " >
+  <img src="https://startamomblog.com/wp-content/uploads/2019/03/undraw_fashion_blogging_w9ol.svg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Health Blogs</h5>
+    <p class="card-text">Wellness blogs are great way to stay informed and be inspired when it comes to living a healthy lifestyle.</p>
+    <a href="#" class="btn btn-primary">Related Blogs</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem; " >
+  <img src="https://thumbs.dreamstime.com/b/young-male-doctor-blue-medical-gloves-holds-cubes-inscription-faq-health-medicine-concept-young-male-doctor-214424338.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">FAQ's</h5>
+    <p class="card-text">To get solution for frequently asked questions.</p>
+    <a href="#" class="btn btn-primary">Questions</a>
+  </div>
+</div>
+
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Gender</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Gender">
+</div>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Age</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" Enter your Age">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">SBP</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Symbolic Blood Pressure">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">HBP</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="High Blood Pressure">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Heart_rate</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Heart Rate">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Glucose</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your Glucose level">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Spo2</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Spo2 level">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Temperature</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your body Temperature">
+</div>
+
+
+
+</div>
+	<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+		var model = document.getElementById('login-form');
+		window.onclick = function(event)
+		{
+			if (event.target == model)
+			{
+				model.style.display = "none";
+			}
+		}
+	</script>
+
+
+
+
+</body>
+
+</html>
