@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
+  
+  <!-- As a link -->
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/recommendations">Recommendations</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/faqs">FAQ's</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/login">Login</a>
+    </li>
+  </ul>
+  
     <!-- As a link -->
 <!--<nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
@@ -21,7 +41,7 @@
     </div>
   </nav>-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,16 +54,16 @@
               Dropdown
             </button>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="about.html">About</a></li>
-              <li><a class="dropdown-item" href="recommendations.html">Recommendations</a></li>
-              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="/about">About</a></li>
+              <li><a class="dropdown-item" href="/recommendations">Recommendations</a></li>
+              <li><a class="dropdown-item" href="/faqs">FAQ's</a></li>
             </ul>
         </ul>
       </div>
-      <a class="navbar-brand" href="login.html">Login</a>
-      <!--<a class="navbar-brand" href="login.html">Sign Up</a>  -->
+      <a class="navbar-brand" href="/login">Login</a>
+      <a class="navbar-brand" href="login.html">Sign Up</a> 
     </div>
-  </nav>
+  </nav>-->
   
   <!-- As a heading
   <nav class="navbar navbar-light bg-light">
@@ -62,7 +82,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Project_69-01.jpg" class="d-block w-100 h-100" alt="...">
+        <img src="../static/Project_69-01.jpg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
             <div class="p-text"><h5>Health Tips</h5>
                 <p>“Time and health are two precious assets that we don’t recognize and appreciate until they have been depleted.” </p>
@@ -70,7 +90,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="Project_155-12.jpg" class="d-block w-100 h-100" alt="...">
+        <img src="../static/Project_155-12.jpg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
             <div class="p-text"><h5>Health Blogs</h5>
                 <p>“A healthy outside starts from the inside.”</p>
@@ -78,7 +98,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="Project_155-07.jpg" class="d-block w-100 h-100" alt="...">
+        <img src="../static/Project_155-07.jpg" class="d-block w-100 h-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
             <div class="p-text"><h5>Health Maintenance</h5>
             <p>“The human body is the best picture of the human soul.”</p>
@@ -99,28 +119,28 @@
 
   <div class="cards">
     <div class="card" style="width: 18rem;">
-        <img src="Project_69-01.jpg" class="card-img-top" alt="...">
+        <img src="../static/Project_69-01.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Tips</h5>
           <p class="card-text">Being healthy should be part of your overall lifestyle help prevent chronic diseases and long-term illnesses.   </p>
-          <a href="tips.html" class="btn btn-primary">Advice</a>
+          <a href="/tips" class="btn btn-primary">Advice</a>
         </div>
       </div>
     <div class="card" style="width: 18rem; " >
-        <img src="Project_155-12.jpg" class="card-img-top" alt="...">
+        <img src="../static/Project_155-12.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Analyser</h5>
           <p class="card-text">The health analyser predicts the health of a 
             particular user based on inputs .</p>
-          <a href="./forms.html" class="btn btn-primary">Evaluator</a>
+          <a href="/forms" class="btn btn-primary">Evaluator</a>
         </div>
       </div>
     <div class="card" style="width: 18rem;">
-        <img src="Project_155-07.jpg" class="card-img-top" alt="...">
+        <img src="../static/Project_155-07.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Posts</h5>
           <p class="card-text">Wellness blogs are great way to stay informed and be inspired when it comes to living a healthy lifestyle.</p>
-          <a href="post.html" class="btn btn-primary">Blogs</a>
+          <a href="/posts" class="btn btn-primary">Blogs</a>
         </div>
       </div>
   </div>
@@ -179,7 +199,7 @@
     </div>
     </div>
     </footer>
-    
+  
 
 </body>
 </html>

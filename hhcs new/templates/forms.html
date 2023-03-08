@@ -11,44 +11,126 @@
 
 </head>
 <body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/recommendations">Recommendations</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/faqs">FAQ's</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/login">Login</a>
+    </li>
+  </ul>
+    <h3> Evaluator Form</h3>
     <div class="form-inp">
-    <form>
+    <form method="post" action="/submit">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Gender</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Gender">
+          <label for="gender" class="form-label" >Gender</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">Gender refers to the characteristics of women, men, girls and boys that are socially constructed.
+          For Female enter 0,for male enter 1. 
         </div>
+          <input type="text" class="form-control" name="gender" id="gender" required="1" placeholder="Enter your Gender">
+        </div>
+        
+        <form action="/action_page.php">
+          <label for="cars">Gender</label>
+          <select id="cars" name="cars">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </form>
+  
+  
+  
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Age</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Age">
+          <label for="age" class="form-label">Age</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">Age is the length of an existence extending from the beginning to any given time.
+          Enter your age between 0 to 120 years. 
         </div>
+          <input type="text" class="form-control" required="1" name="age" id="age"  placeholder="Enter your Age">
+        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">SBP</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Symbolic Blood Pressure">
+          <label for="sbp" class="form-label">SBP</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">Systolic blood pressure (SBP) is a more frequent cardiovascular risk factor than diastolic blood pressure (DBP), 
+          and has a greater impact on blood pressure staging, though this can vary with age, sex and country. 
+          Enter your SBP in range (120,140).
         </div>
+          <input type="text" class="form-control" required="1" id="sbp" name="sbp" placeholder="Enter your Symbolic Blood Pressure">
+        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">HBP</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your High Blood Pressure">
+          <label for="hbp" class="form-label">HBP</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">
+          High blood pressure (HBP or hypertension) is when your blood pressure, the force of your blood pushing
+           against the walls of your blood vessels, is consistently too high. 
+          Enter your HBP in range (60,120).
         </div>
+          <input type="text" class="form-control" required="1" id="hbp" name="hbp" placeholder="Enter your High Blood Pressure">
+        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Heart_rate</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your Heart Rate">
+          <label for="h_rate" class="form-label">Heart_rate</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">
+          Heart rate, is the number of times your heart beats per minute.
+          Enter your Heart_rate in range (60,180).
         </div>
+          <input type="text" class="form-control" required="1" id="h_rate" name="h_rate" placeholder="Enter your Heart Rate">
+        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Glucose</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your Glucose level">
+          <label for="glc" class="form-label">Glucose</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">
+          The blood glucose level is the amount of glucose in the blood. Glucose is a sugar that comes from the foods we 
+          eat, and it's also formed and stored inside the body.
+          Enter your glucose in range (100,210).
         </div>
+          <input type="text" class="form-control" required="1" id="glc" name="glc" placeholder="Enter your Glucose level">
+        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">SpO2</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your SpO2 level">
+          <label for="spo2" class="form-label">SpO2</label>
+          <div class="myDIV">For More Info</div>
+          <div class="hide">
+            Oxygen saturation (SpO2) is a measurement of how much 
+            oxygen your blood is carrying as a percentage of the maximum it could carry.
+            Enter your SpO2 in range (96,99).
+          </div>
+          <input type="text" class="form-control" required="1" id="spo2" name="spo2" placeholder="Enter your SpO2 level">
         </div>
+       
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Temperature</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter your body Temperature">
+          <label for="temp" class="form-label">Temperature</label>
+          <div class="myDIV">For More Info</div>
+        <div class="hide">
+          Body temperature is a measure of how well your body can make and get rid of heat.
+          Enter your SpO2 in range (97,106).
         </div>
+          <input type="text" class="form-control" required="1" id="temp" name="temp" placeholder="Enter your body Temperature">
+        </div>
+        
         <div class="submit-form">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
       </form>
+      <h3 style="text-align:center">
+        {{res}}
+      </h3>
+      
     </div>
+
 </body>
 </html>
